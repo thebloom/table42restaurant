@@ -1,0 +1,112 @@
+@pad: 10px;
+@minWidth: 300px;
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+	margin: 0 auto 0 auto;
+	padding-bottom: 50px;
+	width: 100%;
+	min-width: @minWidth;
+	.clearfix();
+}
+
+.row {
+	position: relative;
+	padding: @pad 0 @pad @pad;
+	.clearfix();
+}
+
+[class*='span'] {
+	float: left;
+	padding-right: @pad;
+	.row &:last-of-type {
+		padding-right: @pad;
+	}
+}
+
+.span12 {
+	width: 99.96%;
+}
+.span11 {
+	width: 91.63%;
+}
+.span10 {
+	width: 83.30%;
+}
+.span9 {
+	width: 74.97%;
+}
+.span8 {
+	width: 66.64%;
+}
+.span7 {
+	width: 58.31%;
+}
+.span6 {
+	width: 49.98%;
+}
+.span5 {
+	width: 41.65%;
+}
+.span4 {
+	width: 33.32%;
+}
+.span3 {
+	width: 24.99%;
+}
+.span2 {
+	width: 16.66%;
+}
+.span1 {
+	width: 8.33%;
+}
+
+.offset12 {
+	margin-left: 99.96%;
+}
+.offset11 {
+	margin-left: 91.63%;
+}
+.offset10 {
+	margin-left: 83.30%;
+}
+.offset9 {
+	margin-left: 74.97%;
+}
+.offset8 {
+	margin-left: 66.64%;
+}
+.offset7 {
+	margin-left: 58.31%;
+}
+.offset6 {
+	margin-left: 49.98%;
+}
+.offset5 {
+	margin-left: 41.65%;
+}
+.offset4 {
+	margin-left: 33.32%;
+}
+.offset3 {
+	margin-left: 24.99%;
+}
+.offset2 {
+	margin-left: 16.66%;
+}
+.offset1 {
+	margin-left: 8.33%;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

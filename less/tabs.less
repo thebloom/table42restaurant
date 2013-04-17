@@ -1,0 +1,25 @@
+.tablist {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	.gradient(black, @gradient-blue-light, @gradient-blue-dark);
+	.tab {
+		float: left;
+		width: 50%;
+		padding: 5px 0;
+		font-size: 16px;
+		color: white;
+		text-decoration: none;
+		i {
+			font-size: 24px;
+		}
+		&:active {
+			background: @turqoise;
+		}
+	}
+}

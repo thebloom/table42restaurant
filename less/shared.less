@@ -1,0 +1,21 @@
+html, body {
+	font-family: 'MozTTLight', Verdana, sans-serif;
+}
+
+.table {
+	background: @red;
+	font-size: 16px;
+	padding: 10px;
+	text-align: center;
+	&.open {
+		background: @green;
+		&:hover {
+			cursor: pointer;
+			background: darken(@green, 10%);
+		}
+	}
+	&:hover {
+		cursor: pointer;
+		background: darken(@red, 10%);
+	}
+}
