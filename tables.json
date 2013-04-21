@@ -1,0 +1,36 @@
+{
+  "tables": [
+  {
+    "capacity": "2",
+    "open": true,
+    "location": [
+      3,
+      3
+    ]
+  },
+  {
+    "capacity": "2",
+    "open": true,
+    "location": [
+      3,
+      3
+    ]
+  },
+  {
+    "capacity": "2",
+    "open": false,
+    "location": [
+      3,
+      3
+    ]
+  },
+  {
+    "capacity": "2",
+    "open": true,
+    "location": [
+      3,
+      3
+    ]
+  }
+]
+}
