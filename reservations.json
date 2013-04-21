@@ -3,27 +3,32 @@
   {
     "diners": "2",
     "name": "Matti Virtanen",
-    "time": "12:30"
+    "time": "12:30",
+    "seated": false
   },
   {
     "diners": "4",
     "name": "Olavi Kuosmanen",
-    "time": "12:00"
+    "time": "12:00",
+    "seated": false
   },
   {
     "diners": "3",
     "name": "Mark Edwards",
-    "time": "13:30"
+    "time": "13:30",
+    "seated": false
   },
   {
     "diners": "2",
     "name": "Elina Vartiainen",
-    "time": "12:45"
+    "time": "12:45",
+    "seated": false
   },
   {
     "diners": "5",
     "name": "Tommi Vainikainen",
-    "time": "11:30"
+    "time": "11:30",
+    "seated": false
   }
 ]
 }

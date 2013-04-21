@@ -11,12 +11,12 @@
       </div>
       
     </div>
-    <div class="row" ng-repeat="reservation in reservations | orderBy:predicate:reverse">
-      <div class="span10 offset1 reservation">
+    <div class="row" ng-repeat="reservation in reservations | orderBy:predicate:reverse" ng-hide="reservation.seated" ng-animate="'fade'">
+      <div class="span10 offset1 reservation {{reservation.seated}}" ng-click="seat(reservation)" >
         <div class="span6 name">{{reservation.name}}</div>
         <div class="span2 number">{{reservation.diners}}</div>
         <div class="span2 time">{{reservation.time}}</div>
-        <button class="btn">Seat!</button>
+        <div class="span2">Click to seat</div>
       </div>
     </div>
   </div>

@@ -20,6 +20,7 @@ h1 {
   padding: 8px;
 }
 .table {
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
   position: relative;
   background: #9d261d;
   font-size: 24px;
@@ -60,10 +61,10 @@ h1 {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-.reservation.open {
+.reservation.true {
   background: #46a546;
 }
-.reservation.open:hover {
+.reservation.true:hover {
   cursor: pointer;
   background: #378137;
 }
@@ -78,6 +79,31 @@ h1 {
 }
 .sort :hover {
   cursor: pointer;
+}
+.fade-hide-setup,
+.fade-show-setup,
+.calendar-hide-setup,
+.calendar-show-setup {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  -moz-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  -o-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+}
+.fade-hide-setup,
+.calendar-hide-setup {
+  opacity: 1;
+}
+.fade-hide-setup.fade-hide-start,
+.calendar-hide-setup.calendar-hide-start {
+  opacity: 0;
+}
+.fade-show-setup,
+.calendar-show-setup {
+  opacity: 0;
+}
+.fade-show-setup.fade-show-start,
+.calendar-show-setup.calendar-show-start {
+  opacity: 1;
 }
 .clearfix:after {
   content: "";

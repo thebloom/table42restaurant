@@ -4,18 +4,21 @@ function MapCtrl($scope, $http) {
     console.log(data);
     $scope.tables = data.tables;
   });
-  $scope.toggle = function(index) {
-    $scope.tables[index].open = !$scope.tables[index].open;
+  $scope.toggle = function(table) {
+    table.open = !table.open;
   };
 }
 
 function ReservationCtrl($scope, $http) {
+  $scope.predicate = 'time';
+  $scope.up = "icon-chevron-up";
+  $scope.down = "icon-chevron-down";
   $http.get('reservations.json').
   success(function(data) {
     console.log(data);
     $scope.reservations = data.reservations;
   });
-  $scope.predicate = 'time';
-  $scope.up = "icon-chevron-up";
-  $scope.down = "icon-chevron-down";
+  $scope.seat = function(reservation) {
+    reservation.seated = !reservation.seated;
+  }
 }
