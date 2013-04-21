@@ -1,12 +1,30 @@
 html, body {
 	font-family: 'MozTTLight', Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+header{
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	.gradient(black, @gradient-blue-light, @gradient-blue-dark);
+}
+
+h1 {
+	margin: 0;
+	padding: 8px;
 }
 
 .table {
 	background: @red;
-	font-size: 16px;
-	padding: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 30px 5px;
 	text-align: center;
+	.rounded(10px);
 	&.open {
 		background: @green;
 		&:hover {
@@ -17,5 +35,25 @@ html, body {
 	&:hover {
 		cursor: pointer;
 		background: darken(@red, 10%);
+	}
+}
+
+.reservation {
+	background: @turqoise;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 30px 5px;
+	text-align: center;
+	.rounded(10px);
+	&.open {
+		background: @green;
+		&:hover {
+			cursor: pointer;
+			background: darken(@green, 10%);
+		}
+	}
+	&:hover {
+		cursor: pointer;
+		background: darken(@turqoise, 10%);
 	}
 }

@@ -1,0 +1,15 @@
+<header>
+  <h1>Reservations</h1>
+</header>
+<section id="content">
+  <div class="container">
+    <div class="row" ng-repeat="reservation in reservations">
+      <div class="span10 offset1 reservation">
+        <div class="span6 name">{{reservation.name}}</div>
+        <div class="span2 number">{{reservation.diners}}</div>
+        <div class="span2 time">{{reservation.time}}</div>
+        <button class="btn">Seat!</button>
+      </div>
+    </div>
+  </div>
+</section>

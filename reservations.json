@@ -1,0 +1,29 @@
+{
+  "reservations": [
+  {
+    "diners": "2",
+    "name": "Matti Virtanen",
+    "time": "12:30"
+  },
+  {
+    "diners": "4",
+    "name": "Olavi Kuosmanen",
+    "time": "12:00"
+  },
+  {
+    "diners": "3",
+    "name": "Mark Edwards",
+    "time": "13:30"
+  },
+  {
+    "diners": "2",
+    "name": "Elina Vartiainen",
+    "time": "12:45"
+  },
+  {
+    "diners": "5",
+    "name": "Tommi Vainikainen",
+    "time": "11:30"
+  }
+]
+}

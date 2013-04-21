@@ -3,8 +3,13 @@
 </header>
 <section id="content">
   <div class="container">
+    <div ng-repeat="table in tables">
+      <div class="table">
+        {{table.capacity}}
+      </div>
+    </div>
     <!-- six single tables -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="span1 table open" ng-click="toggle($event)" id="test">
         2
       </div>
@@ -45,6 +50,6 @@
       <div class="span1 offset3 table">
         2
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
