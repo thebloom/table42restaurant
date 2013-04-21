@@ -5,7 +5,7 @@
   <div class="container">
     <div class="tablecontainer">
       <div ng-repeat="table in tables">
-      <div class="table {{table.open}}" style="width: {{table.size[0]}}px; height: {{table.size[1]}}px; top: {{table.location[0]}}px; left:{{table.location[1]}}px;" ng-click="!table.open">
+      <div class="table {{table.open}}" style="width: {{table.size[0]}}px; height: {{table.size[1]}}px; top: {{table.location[0]}}px; left:{{table.location[1]}}px;" ng-click="toggle($index)">
         {{table.capacity}}
       </div>
     </div>

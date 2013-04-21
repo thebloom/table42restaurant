@@ -4,16 +4,8 @@ function MapCtrl($scope, $http) {
     console.log(data);
     $scope.tables = data.tables;
   });
-  $scope.toggle = function(e) {
-  	var elem = angular.element(e.srcElement);
-  	var self = this;
-  	console.log($(elem.parent()).attr('id'));
-  	if(elem.hasClass('open')) {
-  		$(elem).removeClass('open');
-  	}
-  	else {
-  		$(elem).addClass('open');
-  	}
+  $scope.toggle = function(index) {
+    $scope.tables[index].open = !$scope.tables[index].open;
   };
 }
 

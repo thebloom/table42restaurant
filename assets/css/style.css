@@ -20,11 +20,11 @@ h1 {
   padding: 8px;
 }
 .table {
-  position: absolute;
+  position: relative;
   background: #9d261d;
   font-size: 24px;
   font-weight: bold;
-  padding: 30px 5px;
+  padding: 10px 5px;
   text-align: center;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -52,8 +52,7 @@ h1 {
   background: #00d0ff;
   font-size: 24px;
   font-weight: bold;
-  padding: 30px 5px;
-  text-align: center;
+  padding: 30px 15px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -75,8 +74,10 @@ h1 {
 .sort {
   font-size: 24px;
   font-weight: bold;
-  padding: 5px;
-  text-align: center;
+  padding: 0px 15px;
+}
+.sort :hover {
+  cursor: pointer;
 }
 .clearfix:after {
   content: "";
