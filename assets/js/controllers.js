@@ -23,4 +23,7 @@ function ReservationCtrl($scope, $http) {
     console.log(data);
     $scope.reservations = data.reservations;
   });
+  $scope.predicate = 'time';
+  $scope.up = "icon-chevron-up";
+  $scope.down = "icon-chevron-down";
 }

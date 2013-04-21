@@ -3,11 +3,14 @@
 </header>
 <section id="content">
   <div class="container">
-    <div ng-repeat="table in tables">
-      <div class="table">
+    <div class="tablecontainer">
+      <div ng-repeat="table in tables">
+      <div class="table {{table.open}}" style="width: {{table.size[0]}}px; height: {{table.size[1]}}px; top: {{table.location[0]}}px; left:{{table.location[1]}}px;" ng-click="!table.open">
         {{table.capacity}}
       </div>
     </div>
+    </div>
+    
     <!-- six single tables -->
     <!-- <div class="row">
       <div class="span1 table open" ng-click="toggle($event)" id="test">

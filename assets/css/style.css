@@ -20,6 +20,7 @@ h1 {
   padding: 8px;
 }
 .table {
+  position: absolute;
   background: #9d261d;
   font-size: 24px;
   font-weight: bold;
@@ -32,16 +33,20 @@ h1 {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-.table.open {
+.table.true {
   background: #46a546;
 }
-.table.open:hover {
+.table.true:hover {
   cursor: pointer;
   background: #378137;
 }
 .table:hover {
   cursor: pointer;
   background: #721c15;
+}
+.tbl {
+  background: #000000;
+  position: absolute;
 }
 .reservation {
   background: #00d0ff;
@@ -66,6 +71,12 @@ h1 {
 .reservation:hover {
   cursor: pointer;
   background: #00a6cc;
+}
+.sort {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
 }
 .clearfix:after {
   content: "";

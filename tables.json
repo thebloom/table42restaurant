@@ -1,35 +1,51 @@
 {
   "tables": [
   {
-    "capacity": "2",
+    "capacity": "4",
     "open": true,
     "location": [
-      3,
-      3
+      300,
+      500
+    ],
+    "size": [
+      50,
+      100
     ]
   },
   {
     "capacity": "2",
     "open": true,
     "location": [
-      3,
-      3
+      100,
+      100
+    ],
+    "size": [
+      50,
+      50
     ]
   },
   {
     "capacity": "2",
     "open": false,
     "location": [
-      3,
-      3
+      300,
+      600
+    ],
+    "size": [
+      50,
+      50
     ]
   },
   {
     "capacity": "2",
     "open": true,
     "location": [
-      3,
-      3
+      200,
+      400
+    ],
+    "size": [
+      50,
+      50
     ]
   }
 ]

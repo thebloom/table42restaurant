@@ -19,13 +19,14 @@ h1 {
 }
 
 .table {
+	position: absolute;
 	background: @red;
 	font-size: 24px;
 	font-weight: bold;
 	padding: 30px 5px;
 	text-align: center;
 	.rounded(10px);
-	&.open {
+	&.true {
 		background: @green;
 		&:hover {
 			cursor: pointer;
@@ -36,6 +37,11 @@ h1 {
 		cursor: pointer;
 		background: darken(@red, 10%);
 	}
+}
+
+.tbl {
+	background: @black;
+	position: absolute;
 }
 
 .reservation {
@@ -56,4 +62,11 @@ h1 {
 		cursor: pointer;
 		background: darken(@turqoise, 10%);
 	}
+}
+
+.sort {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
 }
