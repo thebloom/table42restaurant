@@ -84,6 +84,9 @@ h2 {
   cursor: pointer;
   background: #00a6cc;
 }
+.reservation i {
+  float: right;
+}
 .sort {
   font-size: 20px;
   font-weight: bold;

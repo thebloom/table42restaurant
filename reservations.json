@@ -8,7 +8,7 @@
   },
   {
     "diners": "4",
-    "name": "Olavi Kuosmanen",
+    "name": "Olavi Metsäniitty",
     "time": "12:00",
     "seated": false
   },
@@ -26,8 +26,14 @@
   },
   {
     "diners": "5",
-    "name": "Tommi Vainikainen",
+    "name": "Tommi Hyrylä",
     "time": "11:30",
+    "seated": false
+  },
+  {
+    "diners": "4",
+    "name": "Gustavo Martinez",
+    "time": "13:45",
     "seated": false
   }
 ]

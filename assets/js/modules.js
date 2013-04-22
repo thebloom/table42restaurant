@@ -1,4 +1,4 @@
-var app = angular.module('table42', []);
+var app = angular.module('table42', ['ngDragDrop']);
 app.config(['$routeProvider', '$compileProvider', function($routeProvider, $compileProvider) {
 	$compileProvider.urlSanitizationWhitelist(/^\s*(https?|ftp|mailto|app|file):/);
     $routeProvider.
@@ -17,7 +17,6 @@ app.factory('cap', function($http) {
 	        cap += item.capacity;
 	      }
 	    });
-	    console.log(cap);
 	});
 	capacityService.changeCapacity = function(item) {
 		if(item.open) {
@@ -26,7 +25,6 @@ app.factory('cap', function($http) {
 		else {
 			cap -= item.capacity;
 		}
-		console.log(cap);
 	}
 	capacityService.capacity = function() {
 		return cap;
