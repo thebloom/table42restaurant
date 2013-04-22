@@ -1,7 +1,7 @@
 {
   "tables": [
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": true,
     "location": [
       100,
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": true,
     "location": [
       100,
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": false,
     "location": [
       200,
@@ -37,7 +37,7 @@
     ]
   },
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": true,
     "location": [
       300,
@@ -49,7 +49,7 @@
     ]
   },
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": true,
     "location": [
       400,
@@ -61,7 +61,7 @@
     ]
   },
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": true,
     "location": [
       500,
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": true,
     "location": [
       500,
@@ -85,7 +85,7 @@
     ]
   },
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": true,
     "location": [
       350,
@@ -97,7 +97,7 @@
     ]
   },
   {
-    "capacity": "2",
+    "capacity": 2,
     "open": true,
     "location": [
       400,
@@ -109,7 +109,7 @@
     ]
   },
   {
-    "capacity": "4",
+    "capacity": 4,
     "open": true,
     "location": [
       100,
@@ -121,7 +121,7 @@
     ]
   },
   {
-    "capacity": "4",
+    "capacity": 4,
     "open": true,
     "location": [
       200,
@@ -133,7 +133,7 @@
     ]
   },
   {
-    "capacity": "4",
+    "capacity": 4,
     "open": true,
     "location": [
       300,
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "capacity": "4",
+    "capacity": 4,
     "open": true,
     "location": [
       300,
@@ -157,7 +157,7 @@
     ]
   },
   {
-    "capacity": "6",
+    "capacity": 6,
     "open": true,
     "location": [
       300,
