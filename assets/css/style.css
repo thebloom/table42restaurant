@@ -21,7 +21,7 @@ h1 {
 }
 .table {
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
-  position: relative;
+  position: absolute;
   background: #9d261d;
   font-size: 24px;
   font-weight: bold;
@@ -112,7 +112,7 @@ h1 {
 }
 .container {
   margin: 0 auto 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   width: 100%;
   min-width: 300px;
   *zoom: 1;

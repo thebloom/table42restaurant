@@ -1,15 +1,15 @@
 {
   "tables": [
   {
-    "capacity": "4",
+    "capacity": "2",
     "open": true,
     "location": [
-      300,
-      500
+      100,
+      25
     ],
     "size": [
       50,
-      100
+      50
     ]
   },
   {
@@ -28,8 +28,8 @@
     "capacity": "2",
     "open": false,
     "location": [
-      300,
-      600
+      200,
+      25
     ],
     "size": [
       50,
@@ -40,12 +40,132 @@
     "capacity": "2",
     "open": true,
     "location": [
-      200,
-      400
+      300,
+      25
     ],
     "size": [
       50,
       50
+    ]
+  },
+  {
+    "capacity": "2",
+    "open": true,
+    "location": [
+      400,
+      25
+    ],
+    "size": [
+      50,
+      50
+    ]
+  },
+  {
+    "capacity": "2",
+    "open": true,
+    "location": [
+      500,
+      25
+    ],
+    "size": [
+      50,
+      50
+    ]
+  },
+  {
+    "capacity": "2",
+    "open": true,
+    "location": [
+      500,
+      100
+    ],
+    "size": [
+      50,
+      50
+    ]
+  },
+  {
+    "capacity": "2",
+    "open": true,
+    "location": [
+      350,
+      200
+    ],
+    "size": [
+      50,
+      50
+    ]
+  },
+  {
+    "capacity": "2",
+    "open": true,
+    "location": [
+      400,
+      300
+    ],
+    "size": [
+      50,
+      50
+    ]
+  },
+  {
+    "capacity": "4",
+    "open": true,
+    "location": [
+      100,
+      600
+    ],
+    "size": [
+      100,
+      50
+    ]
+  },
+  {
+    "capacity": "4",
+    "open": true,
+    "location": [
+      200,
+      600
+    ],
+    "size": [
+      100,
+      50
+    ]
+  },
+  {
+    "capacity": "4",
+    "open": true,
+    "location": [
+      300,
+      300
+    ],
+    "size": [
+      100,
+      50
+    ]
+  },
+  {
+    "capacity": "4",
+    "open": true,
+    "location": [
+      300,
+      450
+    ],
+    "size": [
+      100,
+      50
+    ]
+  },
+  {
+    "capacity": "6",
+    "open": true,
+    "location": [
+      300,
+      600
+    ],
+    "size": [
+      100,
+      100
     ]
   }
 ]

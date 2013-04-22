@@ -20,5 +20,8 @@ function ReservationCtrl($scope, $http) {
   });
   $scope.seat = function(reservation) {
     reservation.seated = !reservation.seated;
+    $scope.incoming.push(reservation);
   }
+  $scope.active = 'open';
+  $scope.incoming = [];
 }
