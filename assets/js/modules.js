@@ -31,20 +31,6 @@ app.factory('cap', function($http) {
 	capacityService.capacity = function() {
 		return cap;
 	}
-    // var items = [];
-    // var myBasketService = {};
-
-    // myBasketService.addItem = function(item) {
-    //     items.push(item);
-    // };
-    // myBasketService.removeItem = function(item) {
-    //     var index = items.indexOf(item);
-    //     items.splice(index, 1);
-    // };
-    // myBasketService.items = function() {
-    //     return items;
-    // };
-
     return capacityService;
 });
 

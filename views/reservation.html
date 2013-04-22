@@ -1,48 +1,43 @@
-<header>
-  <h1>Reservations</h1>
-</header>
-<section id="content">
-  <div class="container">
-    <div class="row">
-      <div class="span4 offset4">
-        <button class="btn btn-large" ng-click="active = 'open';">Open Reservations</button>
-        <button class="btn btn-large" ng-click="active = 'incoming';">Incoming Reservations</button>
-      </div>
+
+<div class="row">
+  <div class="span10 offset1">
+    <button class="btn btn-large" ng-click="active = 'open';">Waiting for seat</button>
+    <button class="btn btn-large" ng-click="active = 'incoming';">Seated</button>
+    <h2>Capacity: {{cap.capacity()}}</h2>
+  </div>
+</div>
+<div id="open" ng-show="active == 'open'">
+  <div class="row">
+    <div class="span10 offset1 sort">
+      <div class="span4" ng-click="predicate = 'name'; reverse=!reverse; namereverse=!reverse">Name <i ng-show="predicate == 'name'" class="{{!reverse && up || down}}"></i></div>
+      <div class="span3" ng-click="predicate = 'diners'; reverse=!reverse; dinersreverse=!reverse">Diners <i ng-show="predicate == 'diners'" class="{{!reverse && up || down}}"></i></div>
+      <div class="span2" ng-click="predicate = 'time'; reverse=!reverse; timereverse=!reverse">Time <i ng-show="predicate == 'time'" class="{{!reverse && up || down}}"></i></div>
     </div>
-    <div id="open" ng-show="active == 'open'">
-      <div class="row">
-        <div class="span10 offset1 sort">
-          <div class="span6" ng-click="predicate = 'name'; reverse=!reverse; namereverse=!reverse">Name <i ng-show="predicate == 'name'" class="{{!reverse && up || down}}"></i></div>
-          <div class="span2" ng-click="predicate = 'diners'; reverse=!reverse; dinersreverse=!reverse">Diners <i ng-show="predicate == 'diners'" class="{{!reverse && up || down}}"></i></div>
-          <div class="span2" ng-click="predicate = 'time'; reverse=!reverse; timereverse=!reverse">Time <i ng-show="predicate == 'time'" class="{{!reverse && up || down}}"></i></div>
-        </div>
-        
-      </div>
-      <div class="row" ng-repeat="reservation in reservations | orderBy:predicate:reverse" ng-hide="reservation.seated" ng-animate="'fade'">
-        <div class="span10 offset1 reservation" ng-click="seat(reservation)" >
-          <div class="span6 name">{{reservation.name}}</div>
-          <div class="span2 number">{{reservation.diners}}</div>
-          <div class="span2 time">{{reservation.time}}</div>
-          <div class="span2">Click to seat</div>
-        </div>
-      </div>
-    </div>
-    <div id="incoming" ng-show="active == 'incoming'">
-      <div class="row">
-        <div class="span10 offset1 sort">
-          <div class="span6" ng-click="predicate = 'name'; reverse=!reverse; namereverse=!reverse">Name <i ng-show="predicate == 'name'" class="{{!reverse && up || down}}"></i></div>
-          <div class="span2" ng-click="predicate = 'diners'; reverse=!reverse; dinersreverse=!reverse">Diners <i ng-show="predicate == 'diners'" class="{{!reverse && up || down}}"></i></div>
-          <div class="span2" ng-click="predicate = 'time'; reverse=!reverse; timereverse=!reverse">Time <i ng-show="predicate == 'time'" class="{{!reverse && up || down}}"></i></div>
-        </div>
-        
-      </div>
-      <div class="row" ng-repeat="reservation in incoming | orderBy:predicate:reverse" ng-animate="'fade'">
-        <div class="span10 offset1 reservation">
-          <div class="span6 name">{{reservation.name}}</div>
-          <div class="span2 number">{{reservation.diners}}</div>
-          <div class="span2 time">{{reservation.time}}</div>
-        </div>
-      </div>
+    
+  </div>
+  <div class="row" ng-repeat="reservation in reservations | orderBy:predicate:reverse" ng-hide="reservation.seated" ng-animate="'fade'">
+    <div class="span10 offset1 reservation" ng-click="seat(reservation)" >
+      <div class="span4 name">{{reservation.name}}</div>
+      <div class="span3 number">{{reservation.diners}}</div>
+      <div class="span2 time">{{reservation.time}}</div>
+      <div class="span3">Click to seat</div>
     </div>
   </div>
-</section>
+</div>
+<div id="incoming" ng-show="active == 'incoming'">
+  <div class="row">
+    <div class="span10 offset1 sort">
+      <div class="span6" ng-click="predicate = 'name'; reverse=!reverse; namereverse=!reverse">Name <i ng-show="predicate == 'name'" class="{{!reverse && up || down}}"></i></div>
+      <div class="span2" ng-click="predicate = 'diners'; reverse=!reverse; dinersreverse=!reverse">Diners <i ng-show="predicate == 'diners'" class="{{!reverse && up || down}}"></i></div>
+      <div class="span2" ng-click="predicate = 'time'; reverse=!reverse; timereverse=!reverse">Time <i ng-show="predicate == 'time'" class="{{!reverse && up || down}}"></i></div>
+    </div>
+    
+  </div>
+  <div class="row" ng-repeat="reservation in incoming | orderBy:predicate:reverse" ng-animate="'fade'">
+    <div class="span10 offset1 reservation">
+      <div class="span6 name">{{reservation.name}}</div>
+      <div class="span2 number">{{reservation.diners}}</div>
+      <div class="span2 time">{{reservation.time}}</div>
+    </div>
+  </div>
+</div>

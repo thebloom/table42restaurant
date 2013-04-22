@@ -19,6 +19,18 @@ h1 {
   margin: 0;
   padding: 8px;
 }
+h2 {
+  margin: 0;
+  padding: 5px;
+  display: inline;
+}
+.sidebar {
+  float: right !important;
+}
+.tablecontainer {
+  position: relative;
+  width: 100%;
+}
 .table {
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
   position: absolute;
@@ -51,9 +63,9 @@ h1 {
 }
 .reservation {
   background: #00d0ff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 30px 15px;
+  padding: 20px 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -73,9 +85,9 @@ h1 {
   background: #00a6cc;
 }
 .sort {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 0px 15px;
+  padding: 0px 10px;
 }
 .sort :hover {
   cursor: pointer;

@@ -3,56 +3,15 @@
 </header>
 <section id="content">
   <div class="container">
-    <div class="tablecontainer">
-      <div ng-repeat="table in tables">
-      <div class="table {{table.open}}" style="width: {{table.size[0]}}px; height: {{table.size[1]}}px; top: {{table.location[0]}}px; left:{{table.location[1]}}px;" ng-click="toggle(table)">
-        {{table.capacity}}
+      <div class="span6 tablecontainer">
+        <div ng-repeat="table in tables">
+          <div class="table {{table.open}}" style="width: {{table.size[0]}}px; height: {{table.size[1]}}px; top: {{table.location[0] - 21}}px; left:{{table.location[1]}}px;" ng-click="toggle(table)">
+          {{table.capacity}}
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    
-    <!-- six single tables -->
-    <!-- <div class="row">
-      <div class="span1 table open" ng-click="toggle($event)" id="test">
-        2
+      <div class="span6 sidebar">
+        <ng-include src="'views/reservation.html'"></ng-include>
       </div>
-      <div class="span1 offset1 table">
-        2
-      </div>
-      <div class="span1 offset1 table">
-        2
-      </div>
-      <div class="span1 offset1 table">
-        2
-      </div>
-      <div class="span1 offset1 table open">
-        2
-      </div>
-      <div class="span1 offset1 table">
-        2
-      </div>
-    </div>
-    <div class="row">
-      <div class="span1 offset1 table">
-        2
-      </div>
-      <div class="span1 offset2 table open">
-        2
-      </div>
-      <div class="span1 offset3 table">
-        2
-      </div>
-    </div>
-    <div class="row">
-      <div class="span1 offset1 table open">
-        2
-      </div>
-      <div class="span1 offset1 table open">
-        2
-      </div>
-      <div class="span1 offset3 table">
-        2
-      </div>
-    </div> -->
   </div>
 </section>
